@@ -1,4 +1,3 @@
-import logo from "../images/logo.svg";
 import { knowledge } from "../data/knowlege.json";
 import { experienced } from "../data/experienced.json";
 import { proficient } from "../data/proficient.json";
@@ -23,7 +22,7 @@ export function Home() {
   return (
     <>
       <section>
-        <img src={logo} alt="logo for Todd Heckeler" />
+        <h1>Home</h1>
       </section>
 
       <section>
