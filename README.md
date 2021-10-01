@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+## About
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+For my personal website: [consume:design](https://www.consumedesign.com).
 
-## Available Scripts
+Experienced Freelance Graphic Web Designer with a demonstrated history of
+working in the graphic design industry. Skilled in jQuery, JavaScript, CSS,
+HTML, Sass, Responsive Web Design, Web Design, Page Layout, and Cross-browser
+Compatibility. Strong arts and design professional with a Bachelor of Arts
+focused in Visual Communication & Design from Kent State University.
 
-In the project directory, you can run:
+Freelance print design, website design, website UI, and website UX for local and
+national clients.
 
-### `yarn start`
+**Current and past client list includes:**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Alliance Bicycles
+- Bike Cleveland
+- Cleveland Film Society
+- Curt Goodrich Bicycles
+- Don Walker Cycles
+- Dream Hammock LLC
+- Endless Bikes
+- Ibis Cycles
+- LiteAF LLC
+- Kirk Frameworks
+- Modern Dog Design Co.
+- Montana Fine Furniture
+- Mtn Air Roasting
+- Naked Bicycles & Design
+- Nesnadny + Schwartz
+- North American Handmade Bicycle Show
+- Pursuit Cycles LLC
+- Rockgeist
+- Ruff Rollin’
+- Strong Frames, Inc.
+- UGQ Outdoor LLC
+- Valentine Distilling
+- Werner Paddles
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Skills
 
-### `yarn test`
+**Expertise in**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Backpacking
+- Mountain Biking
+- Camping
+- HTML/HTML5
+- CSS/CSS3
+- SASS/LESS
+- UI
+- UX
+- Responsive Web Design
+- Wordpress
+- Adobe Photoshop
+- Adobe Illustrator
+- Adobe InDesign
 
-### `yarn build`
+**Proficient in**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- PHP
+- JavaScript
+- jQuery
+- SVG
+- Visual Studio
+- Visual Studio Code
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Experienced in**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Next.js
+- React
+- TypeScript
+- MySQL
+- JSON
+- AJAX
+- Git/Github
+- Web Accessibility Standards (WCAG)
+- Figma
 
-### `yarn eject`
+**Knowlege of**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- AngularJS
+- Python
+- ASP
+- Node.js
+- C#
+- REST API
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Experience
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+NAS Recruitment Innovation UI Developer Dates Employed: Aug 2019 – Present
+Q4-2020 Employee of the Quarter
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Consume Design LLC Freelance Graphic & Web Designer Dates Employed: Dec 1997 –
+Present
 
-## Learn More
+DigitalDay Web Designer Dates Employed: Jun 2000 – Nov 2001
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Digital Navigation Interactive Designer Dates Employed: Jul 1999 – Jul 2000
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Karen Skunta & Company Web Designer Dates Employed: Jun 1998 – Jun 1999
 
-### Code Splitting
+Cleveland Live (cleveland.com) Web Designer Dates Employed: Jan 1997 – Jun 1998
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# consumedesign-v2
