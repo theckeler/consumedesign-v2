@@ -1,0 +1,85 @@
+footer {
+  background: #1d1d1d;
+  width: 100%;
+  z-index: 102;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.875em 0 3.75em 0;
+  will-change: transform;
+  max-height: 4.375em;
+  margin-top: 3.75em;
+}
+footer * {
+  will-change: transform;
+}
+footer .logo {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  max-width: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+footer .logo svg {
+  width: 100%;
+  height: auto;
+}
+footer .logo svg * {
+  fill: #fff;
+}
+footer nav {
+  position: fixed;
+  top: 0;
+  left: 100vw;
+  z-index: 101;
+  height: 100vh;
+  max-height: 100vh;
+  width: 200%;
+  overflow-y: auto;
+  padding-top: 80px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background: #1d1d1d;
+}
+footer nav ul {
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  max-width: 100vw;
+}
+footer nav ul li {
+  padding: 20px;
+}
+footer nav ul li a {
+  color: #b8d33e;
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 2rem;
+  text-align: right;
+}
+footer nav ul.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer nav ul.icons .icon svg {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+footer nav ul.icons .icon svg * {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  fill: #b8d33e;
+}

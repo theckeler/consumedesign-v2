@@ -1,21 +1,22 @@
+import React, { useEffect, useState } from "react";
 import "../css/header.min.css";
 import { ReactComponent as Logo } from "../images/logo.svg";
 import { NavLink } from "react-router-dom";
-//import { GiLightBackpack } from "react-icons/gi";
-//import { HiOutlineDocumentText } from "react-icons/bi";
-//import { IoIosDocFaGithubument } from "react-icons/io";
 import { FaJsfiddle, FaLinkedin } from "react-icons/fa";
 
 const handleClick = (e) => {
+  //this.setMenuOpen(!this.menuOpen);
+
   document.querySelector("header").classList.toggle("active");
   document.querySelector("body").classList.toggle("active");
-  //history.push("/dresses?color=blue");
 };
 
-export function Header() {
+export function Header({ logoDisplay, scrollingDoc }) {
+  //const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <header>
-      <div className="logo">
+    <header className={scrollingDoc ? "scrolling" : ""}>
+      <div className={`logo ${logoDisplay ? "stuck" : ""}`}>
         <Logo />
       </div>
       <nav>

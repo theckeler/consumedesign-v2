@@ -3,7 +3,10 @@ import { experienced } from "../data/experienced.json";
 import { proficient } from "../data/proficient.json";
 import { expertise } from "../data/expertise.json";
 import { clients } from "../data/clients.json";
-//import "../css/home.min.css";
+import "../css/home.min.css";
+
+import bgImg from "../images/20190518_081913.jpg";
+import { ReactComponent as Logo } from "../images/logo.svg";
 
 var returnSorted = (sortMe) => {
   sortMe.sort(function (a, b) {
@@ -21,12 +24,18 @@ const clientsSorted = returnSorted(clients);
 export function Home() {
   return (
     <>
-      <section>
-        <h1>Home</h1>
+      <section className="hero">
+        <div className="overlay">
+          <Logo />
+        </div>
+        <img src={bgImg} alt="" />
+        <h1 className="visually-hidden">consume:design Home</h1>
       </section>
 
       <section>
-        <h2 className="title">About</h2>
+        <div className="skew">
+          <h2>about</h2>
+        </div>
         <p>
           Experienced freelance graphic designer with a demonstrated history of
           working in the interactive design industry. Skilled in jQuery,
@@ -47,44 +56,48 @@ export function Home() {
 
         <ul>
           {clientsSorted.map((obj) => {
-            return <li>{obj}</li>;
+            return <li key={obj}>{obj}</li>;
           })}
         </ul>
       </section>
 
       <section>
-        <h2 className="title">Skills</h2>
+        <div className="skew">
+          <h2>skills</h2>
+        </div>
         <p>Expertise in</p>
         <ul>
           {expertiseSorted.map((obj) => {
-            return <li>{obj}</li>;
+            return <li key={obj}>{obj}</li>;
           })}
         </ul>
 
         <p>Proficient in</p>
         <ul>
           {proficientSorted.map((obj) => {
-            return <li>{obj}</li>;
+            return <li key={obj}>{obj}</li>;
           })}
         </ul>
 
         <p>Experienced in</p>
         <ul>
           {experiencedSorted.map((obj) => {
-            return <li>{obj}</li>;
+            return <li key={obj}>{obj}</li>;
           })}
         </ul>
 
         <p>Knowlege of</p>
         <ul>
           {knowledgeSorted.map((obj) => {
-            return <li>{obj}</li>;
+            return <li key={obj}>{obj}</li>;
           })}
         </ul>
       </section>
 
       <section>
-        <h2 className="title">Experience</h2>
+        <div className="skew">
+          <h2>experience</h2>
+        </div>
         <div className="grid">
           <ul className="no-list">
             <li className="title">

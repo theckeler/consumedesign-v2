@@ -39,20 +39,9 @@ ul.no-list {
   margin: 0;
 }
 
-main {
-  padding: 20px 10px;
-}
-
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-}
-
-h1,
-h2 {
-  text-transform: uppercase;
-  border-bottom: 1px solid #000;
-  padding-bottom: 12px;
 }
 
 h1 {
@@ -60,6 +49,58 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  font-size: 1.375rem;
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+section {
+  overflow-x: hidden;
+}
+section p {
+  font-size: 1.125rem;
+  line-height: 2;
+}
+section .title {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+section .title,
+section p {
+  padding: 0.625em;
+  margin: 0;
+}
+section .skew {
+  position: relative;
+}
+section .skew::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #b8d33e;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+section .skew h2 {
+  font-size: 3.875rem;
+  line-height: 1;
+  position: relative;
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
+  margin-top: 1.25em;
+  margin-bottom: 0em;
+  font-family: "Open Sans";
+  color: rgba(255, 255, 255, 0.6);
+  z-index: 101;
 }

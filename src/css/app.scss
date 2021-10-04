@@ -42,7 +42,7 @@ ul.no-list {
 }
 
 main {
-  padding: 20px 10px;
+  //padding: 20px 10px;
 }
 
 .grid {
@@ -52,9 +52,7 @@ main {
 
 h1,
 h2 {
-  text-transform: uppercase;
-  border-bottom: 1px solid #000;
-  padding-bottom: 12px;
+  //text-transform: uppercase;
 }
 
 h1 {
@@ -62,6 +60,60 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  font-size: rem(22px);
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+section {
+  overflow-x: hidden;
+
+  p {
+    font-size: rem(18px);
+    line-height: 2;
+  }
+  .title {
+    font-size: rem(24px);
+    font-weight: 800;
+  }
+
+  .title,
+  p {
+    padding: em(10px);
+    margin: 0;
+  }
+
+  .skew {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #b8d33e;
+      transition: width 0.5s ease-in-out;
+      will-change: transform;
+      z-index: 0;
+    }
+
+    h2 {
+      font-size: rem(62px);
+      line-height: 1;
+      position: relative;
+      transform: rotate(-4deg);
+      margin-top: em(20px);
+      margin-bottom: em(0);
+      font-family: "Open Sans";
+      color: rgba(#fff, 0.6);
+      z-index: 101;
+    }
+  }
 }

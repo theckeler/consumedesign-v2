@@ -1,8 +1,8 @@
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
-  background: #3e66d3;
+  background: transparent;
   width: 100%;
   z-index: 102;
   display: -webkit-box;
@@ -12,16 +12,37 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
+  will-change: transform;
+  max-height: 4.375em;
+}
+header * {
+  will-change: transform;
+}
+header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #1d1d1d;
+  z-index: 1001;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+  will-change: transform;
 }
 header:after {
   content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
-  width: 100%;
+  width: 0;
   height: 2px;
-  background: #303030;
+  background: #b8d33e;
   z-index: 1001;
+  -webkit-transition: width 0.8s ease-in-out;
+  transition: width 0.8s ease-in-out;
+  will-change: transform;
 }
 header.active:after {
   background: #b8d33e;
@@ -59,15 +80,17 @@ header .logo {
   top: 0;
   left: 0;
   z-index: 1001;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  max-width: 200px;
+  width: 100%;
+  overflow: hidden;
 }
 header .logo svg {
   width: 100%;
-  max-width: 200px;
   height: auto;
 }
 header .logo svg * {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
   fill: #fff;
 }
 header ul.hamburger {
@@ -82,8 +105,6 @@ header ul.hamburger {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
   margin: 0 0 0 auto;
   width: 50px;
   height: 50px;
@@ -97,13 +118,17 @@ header ul.hamburger {
 }
 header ul.hamburger li {
   background: white;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   -webkit-transform-origin: left center;
           transform-origin: left center;
   display: block;
   height: 4px;
   border-radius: 4px;
+  overflow: hidden;
+  position: relative;
 }
 header ul.hamburger li:nth-of-type(2) {
   -webkit-transform: scaleX(0.85);
@@ -112,29 +137,16 @@ header ul.hamburger li:nth-of-type(2) {
 header nav {
   position: fixed;
   top: 0;
-  left: -220vw;
+  left: 100vw;
   z-index: 101;
-  height: 100%;
+  height: 100vh;
   max-height: 100vh;
   width: 200%;
   overflow-y: auto;
   padding-top: 80px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-}
-header nav:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#000), color-stop(55%, #000), to(rgba(0, 0, 0, 0)));
-  background: linear-gradient(to right, #000 0%, #000 55%, rgba(0, 0, 0, 0) 100%);
-  z-index: 0;
-  opacity: 0;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
+  background: #1d1d1d;
 }
 header nav ul {
   position: relative;
@@ -170,4 +182,33 @@ header nav ul.icons .icon svg * {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   fill: #b8d33e;
+}
+header.scrolling:before {
+  width: 100%;
+}
+header.scrolling:after {
+  width: 100%;
+}
+header.scrolling .logo.stuck {
+  max-width: 100vw;
+  width: 100vw;
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: -5px;
+}
+header.scrolling .logo.stuck svg {
+  -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
+          filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
+}
+header.scrolling .logo.stuck svg * {
+  fill: rgba(255, 255, 255, 0.3);
+}
+header.scrolling .hamburger {
+  background: black;
+}
+header.scrolling .hamburger li {
+  background: #b8d33e;
 }
