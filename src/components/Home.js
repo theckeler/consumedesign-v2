@@ -54,7 +54,7 @@ export function Home() {
           <strong>Current and past client list includes:</strong>
         </p>
 
-        <ul>
+        <ul className="bubbles">
           {clientsSorted.map((obj) => {
             return <li key={obj}>{obj}</li>;
           })}
@@ -66,28 +66,28 @@ export function Home() {
           <h2>skills</h2>
         </div>
         <p>Expertise in</p>
-        <ul>
+        <ul className="bubbles">
           {expertiseSorted.map((obj) => {
             return <li key={obj}>{obj}</li>;
           })}
         </ul>
 
         <p>Proficient in</p>
-        <ul>
+        <ul className="bubbles">
           {proficientSorted.map((obj) => {
             return <li key={obj}>{obj}</li>;
           })}
         </ul>
 
         <p>Experienced in</p>
-        <ul>
+        <ul className="bubbles">
           {experiencedSorted.map((obj) => {
             return <li key={obj}>{obj}</li>;
           })}
         </ul>
 
         <p>Knowlege of</p>
-        <ul>
+        <ul className="bubbles">
           {knowledgeSorted.map((obj) => {
             return <li key={obj}>{obj}</li>;
           })}
@@ -101,7 +101,8 @@ export function Home() {
         <div className="grid">
           <ul className="no-list">
             <li className="title">
-              Freelance Graphic Designer 12/1996 - Present
+              Freelance Graphic Designer, Visual Designer, UX Designer & UI
+              Developer 12/1996 - Present
             </li>
             <li>
               <p>
@@ -169,29 +170,47 @@ export function Home() {
 
           <ul className="no-list">
             <li className="title">DigitalDay</li>
-            <li>Interactive Designer</li>
-            <li>Dates Employed: Jun 2000 – Nov 2001</li>
+            <li>
+              <p>Interactive Designer</p>
+            </li>
+            <li>
+              <p>Dates Employed: Jun 2000 – Nov 2001</p>
+            </li>
           </ul>
 
           <ul className="no-list">
             <li className="title">Digital Navigation</li>
-            <li>Interactive Designer</li>
-            <li>Dates Employed: Jul 1999 – Jul 2000</li>
+            <li>
+              <p>Interactive Designer</p>
+            </li>
+            <li>
+              <p>Dates Employed: Jul 1999 – Jul 2000</p>
+            </li>
           </ul>
 
           <ul className="no-list">
             <li className="title">Karen Skunta &amp; Company</li>
-            <li>Interactive Designer</li>
-            <li>Dates Employed: Jun 1998 – Jun 1999</li>
+            <li>
+              <p>Interactive Designer</p>
+            </li>
+            <li>
+              <p>Dates Employed: Jun 1998 – Jun 1999</p>
+            </li>
           </ul>
 
           <ul className="no-list">
             <li className="title">Cleveland Live (cleveland.com)</li>
-            <li>Interactive Designer</li>
-            <li>Dates Employed: Jan 1997 – Jun 1998</li>
+            <li>
+              <p>Interactive Designer</p>
+            </li>
+            <li>
+              <p>Dates Employed: Jan 1997 – Jun 1998</p>
+            </li>
           </ul>
         </div>
       </section>
     </>
   );
 }
+
+export default Home;

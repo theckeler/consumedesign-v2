@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "./components/Home";
 import { Portfolio } from "./components/Portfolio";
 import { FourZeroFour } from "./components/FourZeroFour";
-import { Header } from "./components/Header";
+import Header from "./components/Header";
 import { Footer } from "./components/Footer";
-import "normalize.css";
+//import "normalize.css";
 import "./css/app.min.css";
 
 const App = () => {
@@ -32,6 +32,7 @@ const App = () => {
       }
     });
   }, []);
+
   return (
     <>
       <Router>
