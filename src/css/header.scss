@@ -26,7 +26,7 @@ header {
     height: 100%;
     background: #1d1d1d;
     z-index: 1001;
-    transition: width 0.5s ease-in-out;
+    transition: width 0.4s;
     will-change: transform;
   }
 
@@ -39,7 +39,7 @@ header {
     height: 2px;
     background: #b8d33e;
     z-index: 1001;
-    transition: width 0.8s ease-in-out;
+    transition: width 0.8s;
     will-change: transform;
   }
 
@@ -130,10 +130,7 @@ header {
   }
 
   &.scrolling {
-    &:before {
-      width: 100%;
-    }
-
+    &:before,
     &:after {
       width: 100%;
     }

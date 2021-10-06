@@ -27,8 +27,8 @@ header:before {
   height: 100%;
   background: #1d1d1d;
   z-index: 1001;
-  -webkit-transition: width 0.5s ease-in-out;
-  transition: width 0.5s ease-in-out;
+  -webkit-transition: width 0.4s;
+  transition: width 0.4s;
   will-change: transform;
 }
 header:after {
@@ -40,8 +40,8 @@ header:after {
   height: 2px;
   background: #b8d33e;
   z-index: 1001;
-  -webkit-transition: width 0.8s ease-in-out;
-  transition: width 0.8s ease-in-out;
+  -webkit-transition: width 0.8s;
+  transition: width 0.8s;
   will-change: transform;
 }
 header.active:after {
@@ -127,10 +127,7 @@ header ul.hamburger li:nth-of-type(2) {
   -webkit-transform: scaleX(0.85);
           transform: scaleX(0.85);
 }
-header.scrolling:before {
-  width: 100%;
-}
-header.scrolling:after {
+header.scrolling:before, header.scrolling:after {
   width: 100%;
 }
 header.scrolling .logo.stuck {

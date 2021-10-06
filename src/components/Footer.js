@@ -1,15 +1,19 @@
-import React, { useEffect, useState } from "react";
 import "../css/footer.min.css";
 import { ReactComponent as Logo } from "../images/logo.svg";
-import { NavLink } from "react-router-dom";
+import Icons from "./Icons";
 
 export function Footer({ logoDisplay, scrollingDoc }) {
-  //const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <footer className={scrollingDoc ? "scrolling" : ""}>
-      <div className={`logo ${logoDisplay ? "stuck" : ""}`}>
-        <Logo />
+      <div className="flex">
+        <div className="logo">
+          <Logo />
+        </div>
+        <Icons />
+      </div>
+      <div>
+        <strong>V2:</strong> Made with React/SASS/React deployed on Vercel using
+        a headless WordPress.
       </div>
     </footer>
   );
